@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1893218843544858296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451681363814636629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33439ea675289048884dcc5eec81fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 9058247745999464341, guid: a46c9bf53eed4d74e8ef277d1ac12d2c, type: 3}
+  shotInterval: 2
+  turretHead: {fileID: 0}
+  dragableTurretPrefab: {fileID: 9199424539107669797, guid: 2faef4676df14f54c825b16cb1102d9c, type: 3}
+--- !u!1001 &1757707073576855360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 708518324934194770, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165498652627369532, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fdd2c091772ace0479e66a9da2b9a319, type: 3}
+    - target: {fileID: 4750272045417282325, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_Name
+      value: Pulse Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750272045417282325, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196786030205166908, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -7952749744717797224, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+--- !u!1 &6451681363814636629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4750272045417282325, guid: 605af653aac2c614dafe45a122d42f01, type: 3}
+  m_PrefabInstance: {fileID: 1757707073576855360}
+  m_PrefabAsset: {fileID: 0}

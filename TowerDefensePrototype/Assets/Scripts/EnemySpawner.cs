@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
-    [SerializeField] AIDestinationSetter enemyPrefab;
-    [SerializeField] Transform target;
+    [SerializeField] float spawnTimer = 1f;
+    [SerializeField] Pathfinder enemyPrefab;
+    [SerializeField] Transform waypointParent;
+    [SerializeField] Transform enemyParent;
 
     private void Start() {
         StartCoroutine(SpawnEnemies());
@@ -13,9 +15,9 @@ public class EnemySpawner : MonoBehaviour {
 
     private IEnumerator SpawnEnemies() {
         while (true) {
-            yield return new WaitForSeconds(.5f);
-            AIDestinationSetter aIDestinationSetter = Instantiate(enemyPrefab);
-            aIDestinationSetter.target = target;
+            yield return new WaitForSeconds(spawnTimer);
+            Pathfinder pathfinder = Instantiate(enemyPrefab, transform.position, Quaternion.identity, enemyParent);
+            pathfinder.SetWaypoints(waypointParent);
         }
     }
 }
